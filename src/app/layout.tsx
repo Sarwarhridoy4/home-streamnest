@@ -180,7 +180,7 @@ export default function RootLayout({
         <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
         
         {/* Preload critical resources */}
-        <link rel="preload" href="/favicon.ico" as="image" type="image/x-icon" />
+        {/* Note: favicon.ico is not preloaded as it's not critical for initial render */}
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
