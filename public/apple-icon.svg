@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180">
+  <defs>
+    <linearGradient id="apple-icon-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f87171;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="180" height="180" rx="30" fill="#071221"/>
+  
+  <!-- Icon circle -->
+  <circle cx="90" cy="90" r="56" fill="url(#apple-icon-gradient)"/>
+  
+  <!-- Play/download icon -->
+  <path d="M75 65 L75 115 L115 90 Z" fill="white"/>
+  <path d="M90 122 L90 140" stroke="white" stroke-width="7" stroke-linecap="round"/>
+  <path d="M82 131 L90 140 L98 131" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>
