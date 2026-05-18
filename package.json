@@ -22,7 +22,7 @@
     "eslint": "^10.4.0",
     "eslint-config-next": "16.2.6",
     "tailwindcss": "^4.2.4",
-    "typescript": "^6.0.2",
+    "typescript": "^6.0.3",
     "@types/bun": "latest"
   }
 }
