@@ -1,3 +1,5 @@
+import ReleaseInfo from "@/components/ReleaseInfo";
+
 export default function HeroSection() {
   return (
     <section className="grid items-center gap-8 lg:grid-cols-[1.2fr_0.8fr]" aria-labelledby="hero-heading">
@@ -18,15 +20,9 @@ export default function HeroSection() {
           1000+ others, with single media downloads and playlist workflows.
         </p>
 
-        {/* Status badge */}
-        <div className="neu-pressed p-4" role="status" aria-live="polite">
-          <p className="font-semibold text-primary">
-            Available now: Linux (Debian package and AppImage)
-          </p>
-          <p className="mt-1 text-sm text-slate-400">
-            Coming soon: Windows, mobile, and macOS.
-          </p>
-        </div>
+         {/* Status badge */}
+         <ReleaseInfo />
+
 
         {/* CTA Buttons */}
         <div className="flex flex-col gap-4 sm:flex-row" role="group" aria-label="Download and GitHub actions">
@@ -54,37 +50,6 @@ export default function HeroSection() {
             </svg>
             Star on GitHub
           </a>
-        </div>
-
-        {/* Direct Download Links */}
-        <div className="space-y-3">
-          <p className="text-sm font-semibold text-slate-400">Direct Downloads:</p>
-          <div className="flex flex-col gap-3 sm:flex-row">
-            <a
-              className="focus-ring btn-download inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-medium text-white"
-              href="https://github.com/Sarwarhridoy4/StreamNest/releases/latest/download/streamnest_2.0.0_amd64.deb"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Download StreamNest Debian package (opens in a new tab)"
-            >
-              <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-              Debian Package (.deb)
-            </a>
-            <a
-              className="focus-ring btn-download inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-medium text-white"
-              href="https://github.com/Sarwarhridoy4/StreamNest/releases/latest/download/StreamNest-2.0.0-x86_64.AppImage"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Download StreamNest AppImage (opens in a new tab)"
-            >
-              <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-              AppImage (Linux)
-            </a>
-          </div>
         </div>
       </div>
 
